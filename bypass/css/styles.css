@@ -1,0 +1,83 @@
+:root {
+   --cor: #ff7f50;
+}
+body {
+   font-family: 'Ubuntu', sans-serif;
+}
+
+body .color-default {
+   color: var(--cor);
+}
+
+.navbar {
+   background-color: var(--cor);
+}
+
+.navbar-brand {
+   font-size: 1.5em;
+}
+
+.banner {
+   background-color: var(--cor);
+   color: white;
+   padding: 50px 0;
+   text-align: center;
+}
+
+.main-content {
+   padding: 20px 0;
+}
+
+.main-content h1 {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.main-content .list-group-item {
+   display: flex;
+   align-items: center;
+   transition: background-color 0.3s;
+   text-transform: uppercase;
+   border-right: none;
+   border-left: none;
+}
+
+.main-content .list-group-item:hover {
+   background-color: var(--cor);
+   color: #fff;
+}
+
+.main-content .list-group-item:first-child {
+   border-top: none;
+}
+
+.main-content .list-group-item:last-child {
+   border-bottom: none;
+}
+
+.main-content .list-group-item a {
+   color: #000;
+   display: block;
+   width: 100%;
+   text-decoration: none;
+}
+
+.main-content .list-group-item:hover a {
+   color: #fff;
+}
+
+.main-content .list-group-item i {
+   margin-right: 15px;
+}
+
+footer {
+   background-color: #0F1020;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   border-top: 1px solid #e7e7e7;
+}
+
+.additional-content {
+   margin-top: 30px;
+}
