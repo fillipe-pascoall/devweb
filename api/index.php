@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Subdomínios</title>
+    <title>Devweb</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,13 +13,21 @@
     
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             background-color: #f8f9fa;
             color: #333;
         }
 
+        .navbar {
+            background-color: #ff7f50;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+
         .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  #ff7f50;
             color: white;
             padding: 80px 0;
             margin-bottom: 50px;
@@ -36,8 +44,8 @@
         .icon-box {
             width: 50px;
             height: 50px;
-            background: #eef2ff;
-            color: #667eea;
+            background: #fff3ef;
+            color: #ff7f50;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -46,7 +54,9 @@
             margin-bottom: 15px;
         }
 
-        .btn-visit {
+        .btn-outline {
+            border-color: #ff7f50;
+            color: #ff7f50;
             border-radius: 8px;
             text-transform: uppercase;
             font-size: 0.8rem;
@@ -54,14 +64,30 @@
             letter-spacing: 1px;
         }
 
+        .btn-outline:hover {
+            background-color: #ff7f50 !important;
+            color: #fff !important;
+        }
+
         footer {
             margin-top: 100px;
-            padding: 40px 0;
-            color: #6c757d;
+            background-color: #0F1020;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e7e7e7;
         }
     </style>
 </head>
 <body>
+
+    <!-- Barra de ferramentas -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <a class="navbar-brand text-uppercase" href="./">
+            <span class="bi bi-globe text-dark"></span>
+            &nbsp;Devweb
+        </a>
+    </nav>
 
     <!-- Hero Header -->
     <header class="hero-section text-center">
@@ -83,7 +109,7 @@
                     </div>
                     <h4>ByPass</h4>
                     <p class="text-muted small">Acesso as configurações do android e fazer FRP bypass.</p>
-                    <a href="bypass/" class="btn btn-outline-primary mt-auto btn-visit">Acessar Subdomínio</a>
+                    <a href="bypass/" class="btn btn-outline mt-auto">Acessar Subdomínio</a>
                 </div>
             </div>
 
@@ -91,11 +117,11 @@
             <div class="col-md-4">
                 <div class="card h-100 subdomain-card p-4">
                     <div class="icon-box">
-                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-code-slash"></i>
                     </div>
-                    <h4>Loja Virtual</h4>
-                    <p class="text-muted small">Nossa plataforma de e-commerce com os melhores produtos.</p>
-                    <a href="https://shop.seusite.com" class="btn btn-outline-primary mt-auto btn-visit">Acessar Subdomínio</a>
+                    <h4>Home Apis</h4>
+                    <p class="text-muted small">Acesse nossa API e integre nossos serviços em sua aplicação.</p>
+                    <a href="https://homeapis.vercel.app" class="btn btn-outline mt-auto">Acessar Subdomínio</a>
                 </div>
             </div>
 
@@ -107,7 +133,7 @@
                     </div>
                     <h4>Blog/Notícias</h4>
                     <p class="text-muted small">Artigos semanais sobre tecnologia e desenvolvimento.</p>
-                    <a href="https://blog.seusite.com" class="btn btn-outline-primary mt-auto btn-visit">Acessar Subdomínio</a>
+                    <a href="https://blog.seusite.com" class="btn btn-outline mt-auto">Acessar Subdomínio</a>
                 </div>
             </div>
 
@@ -119,7 +145,7 @@
                     </div>
                     <h4>Área do Cliente</h4>
                     <p class="text-muted small">Gerencie sua conta, faturas e suporte técnico personalizado.</p>
-                    <a href="https://cliente.seusite.com" class="btn btn-outline-primary mt-auto btn-visit">Acessar Subdomínio</a>
+                    <a href="https://cliente.seusite.com" class="btn btn-outline mt-auto">Acessar Subdomínio</a>
                 </div>
             </div>
 
@@ -131,15 +157,17 @@
                     </div>
                     <h4>Documentação API</h4>
                     <p class="text-muted small">Guia completo para desenvolvedores integrarem nossos serviços.</p>
-                    <a href="https://api.seusite.com" class="btn btn-outline-primary mt-auto btn-visit">Acessar Subdomínio</a>
+                    <a href="https://api.seusite.com" class="btn btn-outline mt-auto">Acessar Subdomínio</a>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <footer class="text-center">
-        <p>&copy; 2026 Devweb. Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <footer>
+       <p>Este site foi criado por <span class="color-default fw-bold">Fillipe Pascoall</span></p>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->

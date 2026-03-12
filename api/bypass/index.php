@@ -10,13 +10,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Barra de ferramentas -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand text-uppercase" href="./">
-            <span class="bi bi-android text-dark"></span>
-            &nbsp;Bypass
-        </a>
-    </nav>
 
     <!-- Banner -->
     <div class="banner px-4">
@@ -60,8 +53,9 @@
         </ul>
         <h1 class="mt-5">Códigos USSD</h1>
         <ul class="list-group">
+            <li class="list-group-item"><a href="tel:%2A%230%2A%23"><i class="bi bi-telephone-fill"></i> *#0*# (Teste de telefone)</a></li>
             <li class="list-group-item"><a href="tel:%2A%2385%23"><i class="bi bi-telephone-fill"></i> *#85# (habilita adb, teste de telefone, Tecno/Infinix)</a></li>
-            <li class="list-group-item"><a href="tel:%2A%230%2A%23"><i class="bi bi-telephone-fill"></i> *#0*#</a></li>
+            
         </ul>
 
         <!-- Conteúdo Adicional -->
